@@ -1,123 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jeanne Laurel | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeanne Laurel | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <h1 class="logo">Jeanne Laurel</h1>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <!-- Floating Tech Shapes -->
-  <div class="tech-shapes">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+    <section id="home" class="hero-section">
+      <div class="container hero-content">
+        <h2 class="animated-text">Hello, I'm <span class="highlight">Jeanne!</span></h2>
+        <p class="tagline">A dedicated Computer Technology student & tech innovator 🚀</p>
+        <a href="#projects" class="btn animated-btn">See My Work</a>
+        <div class="background-blobs">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </section>
 
-  <!-- HEADER -->
-  <header class="fade-in">
-    <div class="container">
-      <h1 class="logo">Jeanne Laurel</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+    <section id="about" class="about-section">
+      <div class="container about-container">
+        <div class="profile-frame animate-on-scroll">
+          <img src="profile.jfif" alt="Profile Photo" class="profile-pic" />
+        </div>
+        <div class="about-text animate-on-scroll">
+          <h2>About Me</h2>
+          <p>
+            I’m a fourth-year Computer Technology student at Cebu Technological University with hands-on experience in Arduino projects,
+            embedded systems, and innovative research solutions. I have a passion for designing practical tech that solves real-world
+            problems, and my work has been recognized with awards in research and exhibits.
+          </p>
+          <div class="skills-block">
+            <h3>Skills</h3>
+            <ul class="skills-list">
+              <li>Arduino Projects & Embedded Systems</li>
+              <li>Basic C Programming</li>
+              <li>Hardware & Software Installation</li>
+              <li>Basic Troubleshooting</li>
+              <li>Microsoft Office Suite</li>
+              <li>Web Research & Internet Surfing</li>
+              <li>Flexible & Adaptable</li>
+            </ul>
+          </div>
+          <a href="CV_Laurel.pdf" class="btn animated-btn" download>Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <div class="project-card animate-on-scroll">
+            <h3>PisoPrint Vending Machine with Inventory Management</h3>
+            <p>
+              Designed and developed a coin-operated printing machine with an inventory tracking system. Won the
+              <strong>Best Paper Award</strong> and <strong>1st Place in the Research Exhibit Competition</strong>.
+            </p>
+          </div>
+
+          <div class="project-card animate-on-scroll">
+            <h3>Arduino-Based House Wiring Simulation</h3>
+            <p>
+              Created a live model of a house wiring system with functional switches, lights, and circuit breakers to demonstrate
+              safe and efficient home electrical setups.
+            </p>
+          </div>
+
+          <div class="project-card animate-on-scroll">
+            <h3>Microsoft Office Certificate Design</h3>
+            <p>Produced high-quality certificates for academic and event purposes using Microsoft Office tools.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container animate-on-scroll">
+        <h2>Contact Me</h2>
+        <p>Let’s collaborate on innovative tech projects or research ideas!</p>
+        <ul class="contact-info">
+          <li>Email: <a href="mailto:jeannelaurel16@gmail.com">jeannelaurel16@gmail.com</a></li>
+          <li>Phone: 0912 415 9461</li>
+          <li>Location: Cebu City</li>
         </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- HERO SECTION -->
-  <section id="home" class="hero fade-in">
-    <div class="container">
-      <h2>Hello, I'm <span class="highlight">Jeanne!</span></h2>
-      <p class="tagline">A dedicated Computer Technology student & tech innovator 🚀</p>
-      <a href="#projects" class="btn">See My Work</a>
-    </div>
-  </section>
-
-  <!-- ABOUT SECTION -->
-  <section id="about" class="section fade-in">
-    <div class="container about-container">
-
-      <!-- Animated bubbles -->
-      <div class="bubble-bg">
-        <div class="bubble bubble1"></div>
-        <div class="bubble bubble2"></div>
-        <div class="bubble bubble3"></div>
+        <a href="mailto:jeannelaurel16@gmail.com" class="btn animated-btn">Email Me</a>
       </div>
+    </section>
 
-      <img src="profile.jfif" alt="Profile Photo" class="profile-pic" />
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>I’m a fourth-year Computer Technology student at Cebu Technological University with hands-on experience in Arduino projects, embedded systems, and innovative research solutions. I have a passion for designing practical tech that solves real-world problems, and my work has been recognized with awards in research and exhibits.</p>
-        
-        <h3>Skills</h3>
-        <ul class="skills">
-          <li>Arduino Projects & Embedded Systems</li>
-          <li>Basic C Programming</li>
-          <li>Hardware & Software Installation</li>
-          <li>Basic Troubleshooting</li>
-          <li>Microsoft Office Suite</li>
-          <li>Web Research & Internet Surfing</li>
-          <li>Flexible & Adaptable</li>
-        </ul>
-        
-        <a href="CV_Laurel.pdf" class="btn" download>Download Resume</a>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="social-links">
+          </div>
+        <p>&copy; 2025 Jeanne Laurel. All rights reserved.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS SECTION -->
-  <section id="projects" class="section fade-in">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-list">
-        
-        <div class="project-card">
-          <h3>PisoPrint Vending Machine with Inventory Management</h3>
-          <p>Designed and developed a coin-operated printing machine with an inventory tracking system. Won the <strong>Best Paper Award</strong> and <strong>1st Place in the Research Exhibit Competition</strong>.</p>
-        </div>
-
-        <div class="project-card">
-          <h3>Arduino-Based House Wiring Simulation</h3>
-          <p>Created a live model of a house wiring system with functional switches, lights, and circuit breakers to demonstrate safe and efficient home electrical setups.</p>
-        </div>
-
-        <div class="project-card">
-          <h3>Microsoft Office Certificate Design</h3>
-          <p>Produced high-quality certificates for academic and event purposes using Microsoft Office tools.</p>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT SECTION -->
-  <section id="contact" class="section contact fade-in">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Let’s collaborate on innovative tech projects or research ideas!</p>
-      <ul class="contact-info">
-        <li>Email: <a href="mailto:jeannelaurel16@gmail.com">jeannelaurel16@gmail.com</a></li>
-        <li>Phone: 0912 415 9461</li>
-        <li>Location: Cebu City</li>
-      </ul>
-      <a href="mailto:jeannelaurel16@gmail.com" class="btn">Email Me</a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="fade-in">
-    <div class="container">
-      <p>&copy; 2025 Jeanne Laurel. All rights reserved.</p>
-    </div>
-  </footer>
-
-</body>
+    </footer>
+  </body>
 </html>
