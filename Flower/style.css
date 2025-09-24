@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  background-color: #0a0a0a;
+  overflow: hidden;
+}
+
+.scene {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.flower {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#flower2 {
+  top: 60%;
+  left: 40%;
+}
+
+.petal {
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, #a0eaff, #0077cc);
+  border-radius: 50%;
+  position: absolute;
+  animation: glow 2s infinite alternate;
+  transition: transform 0.3s ease;
+}
+
+.petal:nth-child(1) { transform: rotate(0deg) translateX(40px); }
+.petal:nth-child(2) { transform: rotate(120deg) translateX(40px); }
+.petal:nth-child(3) { transform: rotate(240deg) translateX(40px); }
+
+.center {
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(circle, #ffff99, #ffaa00);
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  box-shadow: 0 0 20px #ffaa00;
+  transition: box-shadow 0.3s ease;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 10px #00ccff; }
+  to { box-shadow: 0 0 20px #00ccff; }
+}
+
+.flower:hover .petal {
+  transform: scale(1.2);
+}
+
+.flower.clicked .center {
+  box-shadow: 0 0 40px #ffcc00;
+}
